@@ -1,0 +1,248 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Roboto+Slab&display=swap');
+
+/* body style */
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: lavender;
+}
+
+h1{
+    color: #3A3A3A;
+    font-size: 40px;
+}
+/* header design */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+nav h3{
+    color: #3A3A3A;
+    padding-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3A3A3A;
+    margin: 8px;
+}
+
+/* First section style */
+
+.influencer-start{
+    display: flex;
+    margin-bottom: 200px;
+}
+.influencer-start img{
+width: 440px;
+height: 414px;
+padding-top: 40px;
+margin-left: 100px;
+}
+.influencer-info{
+    width: 100%;
+padding-left: 2%;
+padding-top: 7%;
+}
+.preebook-link{
+    background-color: #E02C6D;
+    border-radius: 41px;
+    color: white;   
+    font-weight: 700;
+    width: 196px;
+height: 44px;
+text-align: center;
+line-height: 45px;
+}
+.link{
+    text-decoration: none;  
+    color: white;
+    font-size: 16px;
+}
+/* logo styles */
+
+/* products style */
+
+
+.product-heading{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.product-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+padding: 80px;
+}
+.products{
+    width: 329px;
+height: 476px;
+    box-shadow: 0px 0px 30px;
+    background-color: lavender;
+    border-radius: 5px;
+}
+.product-detail{
+    height: 40%;
+    padding-left: 20px;
+    padding-top: 17px;
+    margin: 0;
+}
+.product-detail img{
+    width: 250px;
+height: 206px;
+border-radius: 5px;
+padding-left: 20px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+span{
+    color: gray;
+}
+.product-detail p{
+color: gray;
+margin: 3px;
+}
+.design{
+    padding-left: 88%;
+    padding-top: 5%;
+}
+.design a{
+   text-decoration: none;
+   color: #E02C6DDE;
+   font-weight: 700;
+}
+
+/* Final section */
+
+.influencers-details{
+    background-color: rgb(214, 229, 250);
+    margin-top: 60px;
+    box-shadow: 0px 0px 30px;
+    border-radius: 5px;
+}
+
+.top-heading{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.influencers{
+    display:flex;
+}
+.influencers img{
+    height: 56px;
+    width: 56px;
+    padding-left: 30px;
+}
+.infuencer{
+    padding: 50px;
+    }
+    
+
+/* Footer design */
+footer{
+    background-color: rgb(1, 1, 75);
+    color: rgb(195, 192, 192);
+    font-size: 24px;
+text-align: center;
+font-family: 'Luxurious Roman', cursive;
+height: 300px;
+padding-top: 50px;
+}
+
+/* Mobile devices */
+
+@media only screen and (max-width:688px){
+
+    header span{
+        margin: auto;
+    }
+    .for-pc{
+         display: none;
+     }
+
+     .influencer-info{
+         padding-left: 0%;
+     }  
+     
+     .button{
+        padding-left: 25%;
+    }
+
+    .influencer-start{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+
+    .influencer-start img{
+        width: 100%;
+        margin: 0;
+    }
+    .product-info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 40px;
+    }
+    .influencers-details .influencers{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+padding-left: 60px;
+padding-top: 0%;
+    }
+    .design{text-align: center;
+        padding: 0%;
+    }
+    
+}
+
+
+/* tablet devices */
+
+@media only screen and (min-width: 689px) and (max-width:992px) {
+
+    header span{
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .for-pc{
+         display: none;
+     }
+
+    .influencer-start{ 
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .product-info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    } 
+    .design{text-align: center;
+        padding: 0%;
+    }
+    .influencers-details .influencers{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
